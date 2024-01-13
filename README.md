@@ -30,3 +30,5 @@
 
 4. http://localhost:8080/swagger-ui.html - документация к main-microservice
    http://localhost:8081/swagger-ui.html - документация к library-microservice
+
+Каждый микросервис надо открывать отдельно 
