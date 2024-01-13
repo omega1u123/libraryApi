@@ -1,24 +1,24 @@
 1. создать базу данных
-CREATE DATABASE mainLibraryDB;
+   CREATE DATABASE mainLibraryDB;
 
-CREATE TABLE UserEntity (
-    id SERIAL PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL
-);
+    CREATE TABLE UserEntity (
+        id SERIAL PRIMARY KEY,
+        username VARCHAR(255) NOT NULL,
+        password VARCHAR(255) NOT NULL
+    );
 
-CREATE TABLE BookEntity (
-    id SERIAL PRIMARY KEY,
-    isbn VARCHAR(20) NOT NULL,
-    title VARCHAR(255) NOT NULL,
-    genre VARCHAR(50) NOT NULL,
-    description TEXT NOT NULL,
-    author VARCHAR(100) NOT NULL
-);
+    CREATE TABLE BookEntity (
+        id SERIAL PRIMARY KEY,
+        isbn VARCHAR(20) NOT NULL,
+        title VARCHAR(255) NOT NULL,
+        genre VARCHAR(50) NOT NULL,
+        description TEXT NOT NULL,
+        author VARCHAR(100) NOT NULL
+    );
 
-INSERT INTO UserEntity (id, username, password) VALUES (1, 'user', '123');
+    INSERT INTO UserEntity (id, username, password) VALUES (1, 'user', '123');
 
-CREATE DATABASE libraryDB
+    CREATE DATABASE libraryDB
 
 
 2. в mian-microservice и library-microservice изменить логин и пароль к базе данных в application.properties
